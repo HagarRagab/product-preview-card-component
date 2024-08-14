@@ -1,0 +1,16 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/fonts" as *;
+
+p {
+    color: $alt-font-color;
+    font-size: $p-font-size;
+    font-family: $main-font;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-family: $alt-font;
+    font-size: $h-font-size;
+    font-weight: 700;
+    color: $main-font-color;
+}

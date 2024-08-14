@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product card</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="app/images/favicon-32x32.png">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/fa997c3f4b.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/main.css">
+    <title>Product Card</title>
 </head>
 <body>
-    
+    <main role="main" class="card">
+        <figure class="card__img">
+            <img src="./app/images/image-product-mobile.jpg" alt="product-img">
+        </figure>
+        <header class="card__header">
+            <p>perfume</p>
+            <h1>gabrielle essence eau de parfum</h1>
+        </header>
+        <section class="card__content">
+            <p class="card__description">
+                A floral, solar and voluptuous interpretation composed by Olivier Polge,
+                Perfumer-Creator for the House of CHANEL.
+            </p>
+            <div class="card__price">
+                <span class="current-price" old-price="$169.99">$149.99</span>
+            </div>
+            <button class="button">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Add to Cart</span>
+            </button>
+        </section>
+    </main>
 </body>
 </html>

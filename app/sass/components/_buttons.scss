@@ -1,0 +1,21 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/fonts" as *;
+@use "../abstracts/variables" as *;
+
+.button {
+    width: 100%;
+    background-color: $theme-color;
+    color: $sec-color;
+    border-radius: $border-radius;
+    padding-block: 15px;
+    font-size: $p-font-size;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+    i {
+        margin-right: 10px;
+    }
+    &:hover {
+        background-color: $dark-theme-color;
+    }
+}

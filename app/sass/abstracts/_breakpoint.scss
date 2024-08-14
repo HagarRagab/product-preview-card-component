@@ -1,0 +1,13 @@
+@mixin breakpoint($point) {
+    @if($point == 'mobile') {
+        @media (max-width: 576px) {
+            @content;
+        }
+    } @else if ($point == 'desktop') {
+        @media (min-width: 577px) {
+            @content;
+        }
+    } @else {
+        @error "device size is wrong"
+    }
+}
